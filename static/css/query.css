@@ -1,0 +1,288 @@
+@media only screen and (max-width:1440px) {
+    .section-3 .left-text {
+        padding: 3rem 1rem;
+        line-height: 2.1rem;
+    }
+    .refine-section {
+        left: 10rem;
+        padding: 2rem;
+    }
+}
+
+
+@media only screen and (max-width:1280px) {
+    .section-3 .left-text {
+        padding: 1.5rem 1rem;
+        line-height: 1.7rem;
+    }
+    .hero-container {
+        width: 45vw;
+        padding: .5rem;        
+    }
+}
+
+
+@media only screen and (max-width:1024px) {
+    .section-1 {
+        padding: 0 4rem;
+        padding-bottom: 3rem;
+    }
+    .testimonial-box {
+        width: 30vw;
+    }
+    body {
+        font-size: 15px;
+    }
+    .section-3 {
+        column-gap: 3rem;
+        padding: 5rem 2rem;
+        padding-bottom: 15rem;
+    }
+    .right-container {
+        padding-right: 2rem;
+    }
+    .section-3 .left-text ol li {
+        font-size: 1rem;
+    }
+    footer {
+        padding: 6rem 2rem;
+    }
+    .grid-image-container {
+        padding: 2rem;
+    }
+    .grid-container {
+        grid-template-columns: repeat(6, 1fr);
+        grid-column-gap: 11px;
+        grid-row-gap: 12px;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+
+@media only screen and (max-width:768px) { 
+    .refine-box img {
+        width: 100px;
+    }
+    .hero-container {
+        width: 40vw;
+        padding: 1rem;
+    }
+    .refine-box {
+        margin-bottom: 4rem;
+    }
+    .hero-images {
+        padding: 0 0;
+        column-gap: 3rem;
+    }
+    .hero-flex {
+        padding: 0 0;
+    }
+    .section-1 img {
+        width: 330px;
+    }
+    .section-1-right p {
+        font-size: 1.4rem;
+        margin-bottom: 1.3rem;
+        line-height: 1.8rem;
+    }
+    body {
+        font-size: 13px;
+    }
+    .section-1 {
+        padding: 0 1rem;
+        padding-bottom: 3rem;
+    }
+    .section-2 {
+        padding: 1rem;
+    }
+    .testimonial-box {
+        width: 30vw;
+        bottom: -1rem;
+    }
+    .testimonial-container {
+        padding: .6rem;
+    }
+    .section-3 {
+        flex-direction: column;
+        row-gap: 3rem;
+        padding-bottom: 5rem;
+    }
+    .section-3 .left-text {
+        width: 60vw;
+    }
+    .section-3 .left-image img {
+        width: 34vw;
+        height: 35vh;
+    }
+    .header {
+        padding: .7rem 1rem;
+    }
+    .section-1-right h1, .section-2 h1 {
+        font-size: 1.6rem;
+    }
+    .section-1-right p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1.5rem;
+    }
+    .testimonial-box p {
+        line-height: 1.9rem;
+        padding: .5rem 0;
+        padding-top: .5rem;
+    }
+    footer {
+        padding: 2rem 2rem;
+    }
+    .footer-nav ul {
+        column-gap: 0.8rem;
+        margin-bottom: 1.3rem;
+    }
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 11px;
+        grid-row-gap: 12px;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .grid-11 {
+        grid-column: 3/4;
+    }
+    .grid-12 {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    .flex-box {
+        /* flex-basis: 28%; */
+        margin-bottom: 2em;
+    }
+    .flex-images-box {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 1.3rem;
+        column-gap: .7rem;
+    }
+    
+}
+
+@media only screen and (max-width:720px) {
+    .section-1 {
+        flex-direction: column;
+    }
+    body {
+        font-size: 10px;
+    }
+    .hero-images img {
+        width: 1.3rem;
+    }
+    .section-1-left {
+        margin: 0 auto;
+        padding-bottom: 3rem ;
+    }
+    .section-3 .left-image img {
+        width: 34vw;
+        height: 35vh;
+    }
+    .flex-images-box {
+        padding: 0 1.5rem;
+        column-gap: .3rem;
+    }
+    .flex-box {
+        flex-basis: 30%;
+    }
+}
+
+
+@media only screen and (max-width:540px) {
+    .grid-container {
+        display: block;
+    }
+    .grid-container > div {
+        margin-bottom: 1.2rem;
+    }
+    .header img {
+        width: 3rem;
+    }
+}
+
+
+@media only screen and (max-width:425px) {
+    .refine-box img {
+        width: 50px;
+    }
+    body {
+        font-size: 8px;
+    }
+    .hero-images {
+        padding: 0 0;
+        column-gap: 0rem;
+    }
+    label {
+        font-size: 1rem;
+        margin-bottom: .5rem;
+        word-spacing: 1px;
+    }
+    .testimonial-box {
+        width: 100%;
+        position: static;
+        bottom: 4rem;
+        margin: 0 auto;
+        padding: 2rem;
+        background: none;
+    }
+    .section-3 .left-text {
+        width: 100vw;
+        box-shadow: 0px 0px 8px 0px rgb(50 50 50 / 75%);
+        padding: 2rem;
+        position: static;
+    }
+    .section-3 .left-image {
+        display: none;
+    }
+    #span {
+        color: black;
+    }
+    ol {
+        margin-top: 1.5rem;
+        box-shadow: 0px 0px 8px 0px rgb(50 50 50 / 75%);
+        padding: 1.2rem;
+        padding-right: .1rem;
+    }
+    .footer-box {
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+    .footer-select {
+        font-size: 1rem;
+        width: 39vw;
+        padding: .2rem .2rem;
+    }
+    .section-3 .left-text {
+        box-shadow: none;
+    }
+    .testimonial-box p {
+        font-size: .8rem;
+    }
+    .left-header h1 {
+        font-size: 1.6rem;
+    }
+    .right-container {
+        padding-right: 0;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 375px) {
+    .section-1 img {
+        width: 250px;
+    }
+    .flex-images-box {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 1.3rem;
+        column-gap: .7rem;
+    }
+}
+
+
+
+   

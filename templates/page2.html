@@ -1,0 +1,154 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/query.css' %}">
+</head>
+<body>
+    <div class="page-container">
+        <!-- header starts -->
+        <header class="header">
+            <img src="{% static 'img/logo.png' %}" alt="logo" class="logo">
+            <ul class="header-list">
+                <li><a href="#">BESTÄLL</a></li>
+                <li><a href="#">INSPIRATION</a></li>
+                <li><a href="#">SUPPORT</a></li>
+            </ul>
+        </header>
+        <!-- header ends -->
+
+        <div class="relative">
+            <div class="swiper-container" id="new-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <img src="{% static 'img/Group 4551.png' %}" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="{% static 'img/Group 4551.png' %}" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="{% static 'img/Group 4551.png' %}" alt="">
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <h1 class="relative-header">Hämta inspiration</h1>
+        </div>
+        
+
+       
+
+        <div class="images-section">
+            <h1>Samlade nyaser</h1>
+            <div class="grid-image-container">
+                <div class="grid-container">
+                    <div class="grid-1">
+                        <img src="{% static 'img/Rectangle 13.png' %}" alt="">
+                    </div>
+                   <div class="grid-2">
+                        <img src="{% static 'img/Rectangle 17.png' %}" alt="">
+                   </div>
+                   <div class="grid-3">
+                        <img src="{% static 'img/Rectangle 12.png' %}" alt="">
+                   </div>
+                   <div class="grid-4">
+                        <img src="{% static 'img/Rectangle 13.png' %}" alt="">
+                   </div>
+                   <div class="grid-5">
+                        <img src="{% static 'img/Rectangle 11.png' %}" alt="">
+                   </div>
+                   <div class="grid-6">
+                        <img src="{% static 'img/Rectangle 15.png' %}" alt="">
+                   </div>
+                   <div class="grid-7">
+                        <img src="{% static 'img/Rectangle 18.png' %}" alt="">
+                   </div>
+                   <div class="grid-8">
+                        <img src="{% static 'img/Rectangle 19.png' %}" alt="">
+                   </div>
+                   <div class="grid-9">
+                        <img src="{% static 'img/Rectangle 21.png' %}" alt="">
+                   </div>
+                   <div class="grid-10">
+                        <img src="{% static 'img/Rectangle 20.png' %}" alt="">
+                   </div>
+                   <div class="grid-11">
+                        <img src="{% static 'img/Rectangle 22.png' %}" alt="">
+                   </div>
+                   <div class="grid-12">
+                        <img src="{% static 'img/Rectangle 23.png' %}" alt="">
+                   </div>
+                   <div class="grid-13">
+                        <img src="{% static 'img/Rectangle 24.png' %}" alt="">
+                   </div>
+                   <div class="grid-14">
+                        <img src="{% static 'img/Rectangle 25.png' %}" alt="">
+                   </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="flex-images-container">
+            <h1>Kategorisera nyanser</h1>
+            <div class="flex-images-box">
+                <div class="flex-box">
+                    <img src="{% static 'img/Art/INSTA_Salon_1-bw.png' %}" alt="">
+                    <h3>Deep Ocean</h3>
+                </div>
+                <div class="flex-box">
+                    <img src="{% static 'img/Art/INSTA_Salon_1-bw.png' %}" alt="">
+                    <h3>Deep Ocean</h3>
+                </div>
+                <div class="flex-box">
+                    <img src="{% static 'img/Art/INSTA_Salon_1-bw.png' %}" alt="">
+                    <h3>Deep Ocean</h3>
+                </div>
+                <div class="flex-box">
+                    <img src="{% static 'img/Art/INSTA_Salon_1-bw.png' %}" alt="">
+                    <h3>Deep Ocean</h3>
+                </div>
+                <div class="flex-box">
+                    <img src="{% static 'img/Art/INSTA_Salon_1-bw.png' %}" alt="">
+                    <h3>Deep Ocean</h3>
+                </div>
+                <div class="flex-box">
+                    <img src="{% static 'img/Art/INSTA_Salon_1-bw.png' %}" alt="">
+                    <h3>Deep Ocean</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+          },
+          autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+</html>

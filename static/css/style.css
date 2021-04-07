@@ -1,0 +1,646 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: 500;
+    font-size: 17px;
+    scroll-behavior:smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Marlowe';
+}
+
+/* @font-face {
+    font-family: Marlowe;
+    src: url('css/Marlowe.ttf');
+} */
+
+
+
+@font-face {
+    font-family: Marlowe;
+    src: url(css/Marlowe.ttf);
+}
+
+
+p, a
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: .7rem 10rem;
+    align-items: center;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.header img {
+    width: 5rem
+}
+
+.header .header-list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2rem;
+}
+
+ul li a {
+    font-weight: bolder;
+    transition: .6s;
+    text-decoration: none;
+    color: rgb(12, 12, 12)
+}
+
+ul li a:hover {
+    color: #526C26;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.hero {
+    position: relative;
+}
+
+.refine-section {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    background-color: #f5f5f5;
+    left: 8rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.refine-box img {
+    width: 160px
+}
+
+.refine-box h1 {
+    color: #526C26;
+    margin-bottom: .5rem;
+}
+.refine-box p {
+    margin-bottom: .4rem;
+}
+
+.testimonial-container h2 {
+    opacity: .5;
+}
+
+.hero-img img {
+    max-height: 50vh;
+    object-fit: cover;
+}
+
+.hero-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+}
+
+.hero-container {
+    position: absolute;
+    width: 50vw;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    
+}
+
+.hero-images {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    padding-bottom: 2rem;
+}
+
+.hero-container h1 {
+    text-align: center;
+    margin-bottom: .8rem;
+}
+
+.hero-images img {
+    width: 3rem
+}
+
+label {
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+    word-spacing: 4px;
+}
+
+
+form {
+    text-align: center;
+}
+
+option {
+    color: #526C26;
+}
+
+.select-css {
+    font-size: .85rem;
+    font-family: 'Raleway', sans-serif;
+    width: 5.5rem;
+    padding: 0.15rem 0.3rem;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 11rem;
+    margin-top: 10rem;
+    padding-bottom: 7rem;
+    column-gap: 4rem;
+}
+
+.section-1 img {
+    width: 490px;
+}
+
+.section-1-right h1,
+.section-2 h1 
+{
+    color: #526C26;
+    margin-bottom: 1rem;
+    font-size: 2.6rem;
+    
+}
+
+.section-1-right h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(28, 129, 37); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(16, 122, 33); }
+}
+
+
+.section-1-right p {
+    font-size: 1.4rem;
+    margin-bottom: 1.3rem;
+    line-height: 2.4rem;
+}
+
+.hero-flex {
+    padding: 0 5rem;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 60vh;
+}
+
+#new-swiper {
+    width: 100%;
+    height:  fit-content;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.section-2 {
+    padding: 6rem;
+    background: rgb(247, 248, 246);
+    position: relative;
+    padding-bottom: 7rem;
+}
+
+.section-2 img {
+    object-fit: cover;
+    padding-bottom: 5rem;
+}
+
+.section-2 h1 {
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev
+{
+    background: #f5f5f5;
+    padding: 2rem;
+    border-radius: 50%;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.testimonial-box {
+    background: white;
+    width: 20vw;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 4rem;
+    z-index: 1;
+    left: 15rem;
+    
+}
+
+.testimonial-box p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding: 2rem 0;
+    padding-top: 1rem;
+}
+
+.testimonial-container {
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+    padding: 1.4rem;
+}
+
+.fa-star {
+    color: #526C26;
+    padding-top: 3rem;
+}
+
+.section-3 {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5rem;
+    padding: 5rem 7rem;
+    align-items: center;
+    padding-bottom: 15rem;
+    position: relative;
+}
+
+.section-3-left {
+    position: relative;
+}
+
+.section-3 .left-image img{
+    width: 24vw;
+    height: 60vh;
+}
+
+.section-3 .left-image {
+    margin-left: 10rem
+}
+
+.section-3 .left-text {
+    width: 28vw;
+    background: white;
+    box-shadow: 0px 0px 8px 0px rgba(136, 63, 63, 0.75);
+    padding: 1rem;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+}
+
+.section-3 .left-text ol li {
+    font-size: 1.2rem;
+}
+
+
+
+
+
+.left-header h1 {
+    position: absolute;
+    top: 1rem;
+    left: 2.2rem;
+    font-weight: bold;
+}
+
+
+.right-container {
+   padding-right: 6rem;
+}
+
+.section-3-right p{
+    font-size: 1.4rem;
+}
+
+.section-3-right h1 {
+    color: #526C26;
+    margin-bottom: 1.5rem;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* .section-3-right {
+    padding-left: rem;
+} */
+
+.section-3 .left-text {
+    padding: 3rem 1rem;
+    line-height: 1.9rem;
+    font-style: italic;
+}
+
+ol li {
+    margin-left: .9rem;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+ul li a {
+    text-decoration: none;
+}
+
+
+.footer-nav ul {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2.8rem;
+    margin-bottom: 1.3rem;
+}
+
+.footer-icons {
+    
+}
+
+footer {
+    padding: 6rem 6rem;
+    background: #f5f5f5;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icons a {
+    margin-right: 2rem;
+    color: grey;
+}
+
+
+.footer-right {
+    position: relative;
+}
+
+.footer-select {
+    font-size: 1.2rem;
+    float: right;
+    width: 15vw;
+    padding: .3rem .5rem;
+}
+
+.footer-form {
+    margin-bottom: 6rem;
+}
+
+.footer-left h1 {
+    color: #526C26;
+    margin-bottom: 1.3rem;
+}
+
+.footer-left p {
+    margin-bottom: 1.4rem;
+}
+
+.grid-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 11px;
+    grid-row-gap: 12px;
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.images-section h1{
+    text-align: center;
+    padding-top: 4rem;
+    color: #526C26;
+}
+
+
+.grid-container img{
+    
+}
+
+.grid-1 img{
+    min-height: 50%;
+}
+
+.grid-2 img{
+    min-height: 85%;
+}
+
+.grid-3 {
+
+}
+
+.grid-4 {
+    
+}
+
+.grid-5 {
+
+}
+
+.grid-6 {
+    
+}
+
+.grid-7 {
+
+}
+
+.grid-8 {
+
+}
+
+.grid-9 {
+
+}
+
+.grid-10 {
+    
+}
+
+
+.grid-11 {
+
+}
+
+
+.grid-12 {
+    
+}
+
+
+
+.grid-13 img {
+    min-height: 87%;
+}
+
+.grid-13 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.grid-14 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+.grid-14 img {
+    min-height: 85%;
+} 
+
+.flex-images-box {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0 3rem;
+    column-gap: 1rem;
+}
+
+.flex-box h3 {
+    text-align: center;
+    margin: .5rem;
+}
+
+
+/* .flex-box {
+    flex-basis: 15%;
+} */
+
+.flex-images-container {
+    padding-bottom: 5rem;
+}
+
+.flex-images-container h1 {
+    text-align: center;
+    color: #526C26;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+
+.relative-header {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 8rem;
+    left: 6rem;
+    z-index: 1000;
+    font-weight: bolder;
+}
+
+.relative-header:before {
+    content: '';
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 3px;
+    top: 0;
+    left: 0;
+    right: 109px;
+    display: block;
+}
+
+.relative-header:after {
+    content: '';
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 3px;
+    top: 0;
+    left: 0;
+    right: 109px;
+    display: block;
+}
+
+#span {
+    color: white;
+}
+
+
+.nav-icon {
+    position: absolute;
+    bottom: 1rem;
+    right: 5rem;
+    box-shadow: 0px 0px 8px 0px rgba(136, 63, 63, 0.75);
+    padding: 1rem;
+    border-radius: 50%;
+    opacity: .6;
+}
+
+
+.nav-icon .fa-arrow-up {
+    font-size: 2rem;
+    color: black;
+}
